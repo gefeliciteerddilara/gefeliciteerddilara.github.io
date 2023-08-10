@@ -25,19 +25,35 @@
             border-radius: 10px;
         }
     </style>
+
+    <script>
+        window.onload = function () {
+            const text = "<h1>Fijne verjaardag Dilala dat je oud en lang mag worden en dat je een fijne dag hebt en dat je team je mee uit eten neemt en dat dit jaar je favoriete animu (demon slayer) met een surprise nieuw seizoen komt en dat je stage leuk is en dat je een armband vindt of een leuk boek en dat je the catcher in the rye van mij terug mag krijgen en dat je je studie mag afronden en dat je een stage in engeland mag volgen en dat je een manier vindt om toch bij chipsoft te blijven werken en dat je terug kijkt op een goed afgelopen jaar en dat je volgende levensjaar nog beter mag zin </h1>";
+            const sentences = text.split(" en ");
+
+            sentences.forEach(function (sentence) {
+                const cleanSentence = sentence.replace("<h1>", "").replace("</h1>", "");
+                alert(cleanSentence);
+            });
+        };
+    </script>
+
 </head>
 
 <body>
-    <h1>Gelukkige Verjaardag Dilara!</h1>
+    <h1>Fijne verjaardag Dilala dat je oud en lang mag worden en dat je een fijne dag hebt en dat je team je mee uit
+        eten neemt en dat dit jaar je favoriete animu (demon slayer) met een surprise nieuw seizoen komt en dat je stage
+        leuk is en dat je een armband vindt of een leuk boek en dat je the catcher in the rye van mij terug mag krijgen
+        en dat je je studie mag afronden en dat je een stage in engeland mag volgen en dat je een manier vindt om toch
+        bij chipsoft te blijven werken en dat je terug kijkt op een goed afgelopen jaar en dat je volgende levensjaar
+        nog beter mag zin </h1>
 
     <div class="fun-fact">
         <h2>10 Algemene Fun Facts</h2>
         <ol>
             <li> Scotland chose the unicorn as its national animal. </li>
-            <li> Avocados are not vegetables.
-            </li>
-            <li> The Eiffel Tower gets taller in the summer.
-            </li>
+            <li> Avocados are not vegetables. </li>
+            <li> The Eiffel Tower gets taller in the summer. </li>
             <li> Only four words in the English language end in “dous.”</li>
             <li> Switzerland prohibits the ownership of just one guinea pig.</li>
             <li> A shrimp's heart is in its head.</li>
