@@ -45,6 +45,14 @@
             location.reload();
         }
     };
+
+    document.getElementById("clickButton").addEventListener("click", function () {
+    const imageContainer = document.getElementById("imageContainer");
+    const image = document.createElement("img");
+    image.src = "foto.jpg";
+    image.alt = "A picture";
+    imageContainer.appendChild(image);
+    });
     
 </script>
 
@@ -69,7 +77,8 @@
             <li> People used to say “prunes” when taking pictures.</li>
         </ol>
     </div>
-
+    <button id="clickButton">Niet hier klikken</button>
+    <div id="imageContainer"></div>
 </body>
 
 </html>
