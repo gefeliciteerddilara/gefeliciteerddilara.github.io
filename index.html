@@ -26,25 +26,27 @@
         }
     </style>
 
-    <script>
-        window.onload = function () {
-            let antwoord = prompt("Los eerst deze wordle op: https://mywordle.strivemath.com/?word=wbzpf", "antwoord hier");
-              if (antwoord == 'animu') {
-                const text = "Fijne verjaardag Dilala dat je oud en lang mag worden en dat je een fijne dag hebt en dat je team je mee uit eten neemt en dat dit jaar je favoriete animu (demon slayer) met een surprise nieuw seizoen komt en dat je stage leuk is en dat je een armband vindt of een leuk boek en dat je the catcher in the rye van mij terug mag krijgen en dat je je studie mag afronden en dat je een stage in engeland mag volgen en dat je een manier vindt om toch bij chipsoft te blijven werken want leuk + leuk team en dat je terug kijkt op een goed afgelopen jaar en dat je volgende levensjaar nog beter mag zin";
-                const sentences = text.split(" en ");
-                
-                sentences.forEach(function (sentence, index) {
-                    if (index < sentences.length - 1) {
-                        sentence += " en";
-                    }
-                    alert(sentence);
-                });
+<script>
+    window.onload = function () {
+        let antwoord = prompt("Los eerst deze wordle op: https://mywordle.strivemath.com/?word=wbzpf", "antwoord hier");
+        if (antwoord == 'animu') {
+            const text = "Fijne verjaardag Dilala dat je oud en lang mag worden en dat je een fijne dag hebt en dat je team je mee uit eten neemt en dat dit jaar je favoriete animu (demon slayer) met een surprise nieuw seizoen komt en dat je stage leuk is en dat je een armband vindt of een leuk boek en dat je the catcher in the rye van mij terug mag krijgen en dat je je studie mag afronden en dat je een stage in engeland mag volgen en dat je een manier vindt om toch bij chipsoft te blijven werken want leuk + leuk team en dat je terug kijkt op een goed afgelopen jaar en dat je volgende levensjaar nog beter mag zin";
+            const sentences = text.split(" en ");
 
-              } else {
+            sentences.forEach(function (sentence, index) {
+                if (index < sentences.length - 1) {
+                    sentence += " en";
+                }
+                alert(sentence);
+            });
+
+        } else {
             alert('Fout, loser');
             location.reload();
-        };
-    </script>
+        }
+    };
+</script>
+
 
 </head>
 
